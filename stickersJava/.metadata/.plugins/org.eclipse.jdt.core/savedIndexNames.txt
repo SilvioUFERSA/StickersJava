@@ -1,0 +1,1 @@
+INDEX VERSION 1.131+C:\Users\silvi\OneDrive\Área de Trabalho\javaAlura2\stickersJava\.metadata\.plugins\org.eclipse.jdt.core
