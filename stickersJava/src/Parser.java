@@ -7,6 +7,8 @@ import java.util.regex.Pattern;
 
 public class Parser {
     
+
+    // regex for get body in the jason file
     private static final Pattern REGEX_ITEMS = Pattern.compile(".*\\[(.+)\\].*");
     private static final Pattern REGEX_ATRIBUTOS_JSON = Pattern.compile("\"(.+?)\":\"(.*?)\"");
 

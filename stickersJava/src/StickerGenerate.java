@@ -29,7 +29,8 @@ public class StickerGenerate {
             graphics.setFont(newFont);
 
         // write words on the new image
-            graphics.drawString("BOM FILME", width - 1200 , newHeight - 200);
+            width = (width/2)-(150/2);
+            graphics.drawString("*-*", width , newHeight - 150);
 
         // write imagem on the file
             ImageIO.write(newImage, "png", new File(nameFileMovie));
