@@ -14,18 +14,19 @@ public class StickerGenerate {
             BufferedImage imageOrigin = ImageIO.read(inputStream);
         
         // create new image + footer size for add text.
-           int width = imageOrigin.getWidth();
-           int height = imageOrigin.getHeight();
-           int newHeight = height + 400;    
-    
-           BufferedImage newImage = new BufferedImage(width, newHeight, BufferedImage.TRANSLUCENT);
+            int width = imageOrigin.getWidth();
+            int height = imageOrigin.getHeight();
+            int newHeight = height + 200;    
+            
+            
+            BufferedImage newImage = new BufferedImage(width, newHeight, BufferedImage.TRANSLUCENT);
         
         // copy origim image for new image
             Graphics2D graphics = (Graphics2D) newImage.getGraphics();
             graphics.drawImage(imageOrigin, 0, 0, null);
         
         // Font config
-            Font newFont = new Font(Font.SANS_SERIF, Font.BOLD, 150);
+            Font newFont = new Font(Font.SANS_SERIF, Font.BOLD, 50);
             graphics.setFont(newFont);
 
         // write words on the new image

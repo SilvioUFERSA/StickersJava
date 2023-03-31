@@ -5,12 +5,12 @@ import java.util.List;
 public class App {
     public static void main(String[] args) throws Exception {
 
-        String url = "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&start_date=2022-03-20&end_date=2022-03-23";
+        String url = "http://localhost:8080/languages";
         ClientRequestHttp http = new ClientRequestHttp(url);
 
         String apiBody = http.request();
 
-        ContentExtractor extractor = new NasaContentExtractor();
+        ContentExtractor extractor = new LanguagesContentExtractor();
         List<ContentApi> contents = extractor.contentExtractor(apiBody);
 
 // data exibition
